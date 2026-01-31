@@ -1,0 +1,24 @@
+THẢO LUẬN, BRAINSTORM Ý TƯỞNG TRÊN CHATGPT
+TỔNG HỢP LẠI THÀNH PRD CỦA SẢN PHẨM -> prompt 1.1
+PROMT ĐỂ OVERALL ARCHITECTURE. -> prompt 1.2
+
+
+ORIENTATION => prompt 0. MUST LOAD
+→ DISCUSSION → RPD => prompt 1.1
+→ RPD → OVERALL_ARCHITECTURE => prompt 1.2
+→ OVERALL_ARCHITECTURE → 4 FOUNDATION DOCS
+→ 4 DOCS 
+-> Chạy 1 lần AUTO-GENERATE PROJECT_STATE.md (FROM FOUNDATION DOCS)
+→ CODE
+
+
+
+CÁCH CHẠY MỖI NGÀY Đầu ngày hôm sau:
+
+Mở PROJECT_STATE.md
+Dán DAILY AUTO-START SESSION
+Qua Chat GPT chạy Prompt Reminder Memory (add thư mục tech_manual vào để lấy thông tin)
+Dán task (CÓ THỂ KÈM ĐỌC SKILL)
+=> qua Chat GPT Reminder Memory
+=> Tạo 
+Dán END-OF-SESSION

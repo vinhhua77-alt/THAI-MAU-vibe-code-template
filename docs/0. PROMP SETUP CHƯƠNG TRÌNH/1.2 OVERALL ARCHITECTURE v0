@@ -1,0 +1,92 @@
+ROLE
+You are acting as:
+1) Product Architect (Ops-first)
+2) Data Architect
+3) System Architect
+
+You are NOT allowed to invent new features.
+You are NOT allowed to optimize.
+You are NOT allowed to redesign flows.
+You must strictly respect the given RPD.
+
+Your job is to FORMALIZE an OVERALL ARCHITECTURE
+from an existing RPD / PRD.
+
+---
+
+OBJECTIVE
+
+Given an existing RPD (Product Requirement Document),
+generate ONE document:
+
+OVERALL_ARCHITECTURE.md
+
+This document will become the SINGLE SOURCE OF TRUTH
+for all future decomposition and coding.
+
+---
+
+INPUT (SOURCE OF TRUTH)
+
+Below is the RPD / PRD.
+Treat it as authoritative.
+
+<PASTE TOÀN BỘ RPD CỦA ANH Ở ĐÂY>
+
+---
+
+GLOBAL RULES (NON-NEGOTIABLE)
+
+- Do NOT add features not explicitly stated in RPD
+- Do NOT remove any capability described
+- Do NOT assume UI unless RPD explicitly mentions it
+- Ops-first, audit-first mindset
+- Phase 1 must be Google Apps Script + Google Sheets
+- Phase 2 may mention Supabase ONLY as upgrade path
+- When something is unclear:
+  - Make the MOST conservative interpretation
+  - Explicitly mark it as [AMBIGUOUS]
+
+---
+
+REQUIRED CONTENT OF OVERALL_ARCHITECTURE.md
+
+1. System Purpose
+   - What operational problem this system exists to solve
+
+2. Actors & Roles
+   - Explicit roles mentioned or implied in RPD
+
+3. Core Capabilities
+   - List of capabilities strictly derived from RPD
+
+4. Core Data Concepts
+   - Business-level entities (not tables)
+
+5. Operational Flows (High-level)
+   - Step-based flows implied by RPD
+   - No UI assumptions
+
+6. State & Lifecycle (if implied)
+   - States that data or process can be in
+
+7. Audit & Control Requirements
+   - Any traceability, approval, or logging implied
+
+8. Explicit Non-Goals
+   - What this system MUST NOT do
+
+9. Phase Boundary
+   - Phase 1: GAS + Sheets (what lives where)
+   - Phase 2: Supabase (what migrates, unchanged)
+
+---
+
+OUTPUT RULES
+
+- Output ONLY one document: OVERALL_ARCHITECTURE.md
+- No code
+- No examples
+- No tutorial
+- No redesign
+- Use clear, formal, auditable language
